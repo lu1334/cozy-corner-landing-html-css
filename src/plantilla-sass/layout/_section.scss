@@ -1,0 +1,52 @@
+@use '../abstracts/abstracts' as abstracts;
+
+
+.checkin {
+    margin-left: 800px;
+    margin-top: 10px;
+}
+
+
+.ul_menu {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'uno uno  tres tres'
+                         '.    .    .  .'
+                         ' dos dos cuatro cuatro';
+    justify-items: end;
+    list-style: none;
+    margin-top: 20px;
+   li {
+    font-family: abstracts.$font_poppin;
+    font-size: 13px;
+    &::before{
+        content: url(../../../public/Check.svg);
+        margin-right: 10px;
+    }
+        
+    }
+    .uno {
+       grid-area:uno;
+
+
+
+    }
+       
+    .dos {
+        grid-area: dos;
+        margin-right: 23px;
+      
+    }
+    .tres {
+        grid-area: tres;
+        margin-right: 30px;
+       
+    }
+    .cuatro {
+        grid-area: cuatro;
+        margin-right: 50px;
+        
+    
+        }
+    }
+   

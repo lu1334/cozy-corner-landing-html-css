@@ -1,0 +1,23 @@
+@use '../abstracts/abstracts' as abstracts;
+
+.article {
+    @include abstracts.flexbox(row){
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    svg {
+        width: 60px;
+        height: 60px;
+    }
+    h3 {
+        font-family:abstracts.$font_poppin;
+        font-size: 15px;
+    }
+    .parrafo {
+        font-family: abstracts.$font_poppin;
+        font-size: 15px;
+        font-weight: 100;
+
+    }
+}

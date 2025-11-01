@@ -1,0 +1,18 @@
+
+@mixin flexbox($tipo){
+    @if $tipo== 'row'{
+        display: flex;
+    @content;
+    }
+    @else if $tipo == 'column'{
+        display: flex;
+        flex-direction: column;
+        @content;
+    }
+    @else if $tipo == 'col_reverse'{
+        display: flex;
+        flex-direction: column-reverse;
+        @content;
+    }
+}
+

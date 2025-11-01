@@ -1,0 +1,55 @@
+@use '../abstracts/abstracts' as abstracts;
+ 
+ 
+.header {
+    @include abstracts.flexbox(row){
+            justify-content: space-between;
+            margin: 20px 20px;
+        .logo{
+            margin-top: 20px;
+            width: 150px;
+        }
+       }
+    .ul_nav {
+        @extend .header;
+        gap: 40px;
+        list-style: none;
+
+        li{
+            font-family:abstracts.$font_poppin ;
+            font-size: 15px;
+          }
+
+        .home {
+            color: abstracts.$letra_verde;
+        }
+    } 
+    .ul_search {
+        @extend .header;
+        list-style: none;
+        gap: 30px;
+
+        svg {
+            width: 20px;  
+            margin-top: -5px;
+
+        }
+        a{
+           text-decoration:none;
+           color: abstracts.$letra_verde;
+           font-family: abstracts.$font_poppin;
+           font-size: 10px;
+        }
+        .fondo_verde {
+               background:abstracts.$letra_verde;
+               color: abstracts.$letra_blanca;
+               font-family: abstracts.$font_poppin;
+               padding: 10px 20px;
+               
+        }     
+
+    }
+
+
+           
+}

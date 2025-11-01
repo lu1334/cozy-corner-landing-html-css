@@ -1,0 +1,36 @@
+@use '../abstracts/abstracts' as abstracts;
+
+.cont_hero {
+    @include abstracts.flexbox(column);
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+   
+    
+    .hero{
+         max-width: 40%;
+         height:40%;
+         background: abstracts.$recuadro_blanco;
+         opacity: 0,5;
+         margin-top: 100px;
+         margin-right: 100px;
+         
+        
+        h1 {
+            font-size: 50px;
+            font-family: abstracts.$font_player;
+            font-weight: 600;
+            color: abstracts.$letra_negra;
+            padding: 20px;
+            
+        }
+        p{
+            font-size: 15px;
+            font-family: abstracts.$font_poppin;
+            color: abstracts.$letra_gris;
+            padding: 20px;
+        }
+    }
+
+}
