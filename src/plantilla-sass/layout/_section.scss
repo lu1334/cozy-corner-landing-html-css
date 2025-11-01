@@ -20,7 +20,7 @@
     font-family: abstracts.$font_poppin;
     font-size: 13px;
     &::before{
-        content: url(../../../public/Check.svg);
+        content: url('/img/Check.svg');
         margin-right: 10px;
     }
         
